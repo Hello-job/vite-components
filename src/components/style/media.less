@@ -1,0 +1,12 @@
+@import './config.less';
+
+.mobile-media(@style) {
+    @media(max-width: @max-mobile-width) {
+        @style();
+    }
+}
+.pc-media(@style) {
+    @media(min-width: @max-mobile-width) {
+        @style();
+    }
+}

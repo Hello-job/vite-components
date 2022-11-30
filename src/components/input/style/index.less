@@ -1,0 +1,52 @@
+@import '../../style/config.less';
+@import '../../style/index.less';
+@Prefix: ~'@{pj-prefix}-widget-input';
+
+.@{Prefix} {
+	// @prefixWidget()
+	// .pol-widget();
+
+	// 使用addonBefore模式 --- start
+	.ant-input-group {
+		.ant-input-group-addon {
+			// .transitionMin();
+			padding: 0;
+			background-color: unset;
+			border: unset;
+			font-size: 16px;
+			color: @text-color2;
+		}
+		.ant-input {
+			border: unset;
+            background-color: rgb(245, 247, 250);
+		}
+		.ant-input:focus,
+		.ant-input-focused {
+			box-shadow: none;
+		}
+	}
+	// 使用addonBefore模式 ---end
+}
+
+.@{Prefix}.ant-input-disabled,
+.@{Prefix}.ant-input-affix-wrapper-disabled {
+	// .widget-disabled()
+	// .pol-widget-disabled();
+}
+
+// .@{Prefix}.ant-input {
+// 	border: 1px solid transparent;
+// 	border-radius: 4px;
+
+// 	&:hover {
+// 		border-color: @primary-color;
+// 		background-color: #fff;
+// 	}
+
+// 	&:focus {
+// 		//box-shadow: none;
+// 		//box-shadow: 0 0 0 2px rgb(55 122 255 / 20%);
+// 		border-color: @primary-color;
+// 		background-color: #fff;
+// 	}
+// }
